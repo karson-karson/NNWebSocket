@@ -1,0 +1,1638 @@
+{
+  "ABIRoot": {
+    "kind": "Root",
+    "name": "NNWebSocket",
+    "printedName": "NNWebSocket",
+    "children": [
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NNWebSocketClient",
+        "printedName": "NNWebSocketClient",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "connect",
+            "printedName": "connect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11NNWebSocket0aB6ClientP7connectyyF",
+            "mangledName": "$s11NNWebSocket0aB6ClientP7connectyyF",
+            "moduleName": "NNWebSocket",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNWebSocket.NNWebSocketClient>",
+            "sugared_genericSig": "<Self where Self : NNWebSocket.NNWebSocketClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "disconnect",
+            "printedName": "disconnect()",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11NNWebSocket0aB6ClientP10disconnectyyF",
+            "mangledName": "$s11NNWebSocket0aB6ClientP10disconnectyyF",
+            "moduleName": "NNWebSocket",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNWebSocket.NNWebSocketClient>",
+            "sugared_genericSig": "<Self where Self : NNWebSocket.NNWebSocketClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Function",
+            "name": "send",
+            "printedName": "send(_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Void",
+                "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketSend",
+                "printedName": "NNWebSocket.WebSocketSend",
+                "usr": "s:11NNWebSocket03WebB4SendO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11NNWebSocket0aB6ClientP4sendyyAA03WebB4SendOF",
+            "mangledName": "$s11NNWebSocket0aB6ClientP4sendyyAA03WebB4SendOF",
+            "moduleName": "NNWebSocket",
+            "genericSig": "<τ_0_0 where τ_0_0 : NNWebSocket.NNWebSocketClient>",
+            "sugared_genericSig": "<Self where Self : NNWebSocket.NNWebSocketClient>",
+            "protocolReq": true,
+            "reqNewWitnessTableEntry": true,
+            "funcSelfKind": "NonMutating"
+          },
+          {
+            "kind": "Var",
+            "name": "statePublisher",
+            "printedName": "statePublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<NNWebSocket.WebSocketState, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11NNWebSocket0aB6ClientP14statePublisher7Combine03AnyE0VyAA03WebB5StateOs5NeverOGvp",
+            "mangledName": "$s11NNWebSocket0aB6ClientP14statePublisher7Combine03AnyE0VyAA03WebB5StateOs5NeverOGvp",
+            "moduleName": "NNWebSocket",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<NNWebSocket.WebSocketState, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11NNWebSocket0aB6ClientP14statePublisher7Combine03AnyE0VyAA03WebB5StateOs5NeverOGvg",
+                "mangledName": "$s11NNWebSocket0aB6ClientP14statePublisher7Combine03AnyE0VyAA03WebB5StateOs5NeverOGvg",
+                "moduleName": "NNWebSocket",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNWebSocket.NNWebSocketClient>",
+                "sugared_genericSig": "<Self where Self : NNWebSocket.NNWebSocketClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          },
+          {
+            "kind": "Var",
+            "name": "incomingPublisher",
+            "printedName": "incomingPublisher",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "AnyPublisher",
+                "printedName": "Combine.AnyPublisher<NNWebSocket.WebSocketReceive, Swift.Never>",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketReceive",
+                    "printedName": "NNWebSocket.WebSocketReceive",
+                    "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Never",
+                    "printedName": "Swift.Never",
+                    "usr": "s:s5NeverO"
+                  }
+                ],
+                "usr": "s:7Combine12AnyPublisherV"
+              }
+            ],
+            "declKind": "Var",
+            "usr": "s:11NNWebSocket0aB6ClientP17incomingPublisher7Combine03AnyE0VyAA03WebB7ReceiveOs5NeverOGvp",
+            "mangledName": "$s11NNWebSocket0aB6ClientP17incomingPublisher7Combine03AnyE0VyAA03WebB7ReceiveOs5NeverOGvp",
+            "moduleName": "NNWebSocket",
+            "protocolReq": true,
+            "accessors": [
+              {
+                "kind": "Accessor",
+                "name": "Get",
+                "printedName": "Get()",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "AnyPublisher",
+                    "printedName": "Combine.AnyPublisher<NNWebSocket.WebSocketReceive, Swift.Never>",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Never",
+                        "printedName": "Swift.Never",
+                        "usr": "s:s5NeverO"
+                      }
+                    ],
+                    "usr": "s:7Combine12AnyPublisherV"
+                  }
+                ],
+                "declKind": "Accessor",
+                "usr": "s:11NNWebSocket0aB6ClientP17incomingPublisher7Combine03AnyE0VyAA03WebB7ReceiveOs5NeverOGvg",
+                "mangledName": "$s11NNWebSocket0aB6ClientP17incomingPublisher7Combine03AnyE0VyAA03WebB7ReceiveOs5NeverOGvg",
+                "moduleName": "NNWebSocket",
+                "genericSig": "<τ_0_0 where τ_0_0 : NNWebSocket.NNWebSocketClient>",
+                "sugared_genericSig": "<Self where Self : NNWebSocket.NNWebSocketClient>",
+                "protocolReq": true,
+                "reqNewWitnessTableEntry": true,
+                "accessorKind": "get"
+              }
+            ]
+          }
+        ],
+        "declKind": "Protocol",
+        "usr": "s:11NNWebSocket0aB6ClientP",
+        "mangledName": "$s11NNWebSocket0aB6ClientP",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "NNWebSocketConnection",
+        "printedName": "NNWebSocketConnection",
+        "children": [
+          {
+            "kind": "Function",
+            "name": "makeConnection",
+            "printedName": "makeConnection(url:tokenProvider:reconnectPolicy:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "NNWebSocketClient",
+                "printedName": "any NNWebSocket.NNWebSocketClient",
+                "usr": "s:11NNWebSocket0aB6ClientP"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "URL",
+                "printedName": "Foundation.URL",
+                "usr": "s:10Foundation3URLV"
+              },
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "() -> Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.String?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Void",
+                    "printedName": "()"
+                  }
+                ]
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "ReconnectPolicy",
+                "printedName": "NNWebSocket.ReconnectPolicy",
+                "hasDefaultArg": true,
+                "usr": "s:11NNWebSocket15ReconnectPolicyO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11NNWebSocket0aB10ConnectionO04makeC03url13tokenProvider15reconnectPolicyAA0aB6Client_p10Foundation3URLV_SSSgycAA09ReconnectI0OtFZ",
+            "mangledName": "$s11NNWebSocket0aB10ConnectionO04makeC03url13tokenProvider15reconnectPolicyAA0aB6Client_p10Foundation3URLV_SSSgycAA09ReconnectI0OtFZ",
+            "moduleName": "NNWebSocket",
+            "static": true,
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11NNWebSocket0aB10ConnectionO",
+        "mangledName": "$s11NNWebSocket0aB10ConnectionO",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket"
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketState",
+        "printedName": "WebSocketState",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "connected",
+            "printedName": "connected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO9connectedyA2CmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO9connectedyA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "connecting",
+            "printedName": "connecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO10connectingyA2CmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO10connectingyA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "disconnected",
+            "printedName": "disconnected",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO12disconnectedyA2CmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO12disconnectedyA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "reconnecting",
+            "printedName": "reconnecting",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO12reconnectingyA2CmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO12reconnectingyA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "peerClosed",
+            "printedName": "peerClosed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketState",
+                    "printedName": "NNWebSocket.WebSocketState",
+                    "usr": "s:11NNWebSocket03WebB5StateO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO10peerClosedyA2CmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO10peerClosedyA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "reconnectSuggested",
+            "printedName": "reconnectSuggested",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> (Swift.Bool) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Bool) -> NNWebSocket.WebSocketState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Bool",
+                        "printedName": "Swift.Bool",
+                        "usr": "s:Sb"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO18reconnectSuggestedyACSbcACmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO18reconnectSuggestedyACSbcACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "failed",
+            "printedName": "failed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketState.Type) -> (NNWebSocket.WebSocketState.WebSocketError) -> NNWebSocket.WebSocketState",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(NNWebSocket.WebSocketState.WebSocketError) -> NNWebSocket.WebSocketState",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(error: NNWebSocket.WebSocketState.WebSocketError)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "WebSocketError",
+                            "printedName": "NNWebSocket.WebSocketState.WebSocketError",
+                            "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketState.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketState",
+                        "printedName": "NNWebSocket.WebSocketState",
+                        "usr": "s:11NNWebSocket03WebB5StateO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB5StateO6failedyA2C0cB5ErrorV_tcACmF",
+            "mangledName": "$s11NNWebSocket03WebB5StateO6failedyA2C0cB5ErrorV_tcACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "TypeDecl",
+            "name": "WebSocketError",
+            "printedName": "WebSocketError",
+            "children": [
+              {
+                "kind": "Var",
+                "name": "code",
+                "printedName": "code",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "usr": "s:Sq"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV4codeSiSgvp",
+                "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV4codeSiSgvp",
+                "moduleName": "NNWebSocket",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Optional",
+                        "printedName": "Swift.Int?",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ],
+                        "usr": "s:Sq"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV4codeSiSgvg",
+                    "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV4codeSiSgvg",
+                    "moduleName": "NNWebSocket",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Var",
+                "name": "message",
+                "printedName": "message",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Var",
+                "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV7messageSSvp",
+                "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV7messageSSvp",
+                "moduleName": "NNWebSocket",
+                "declAttributes": [
+                  "HasStorage",
+                  "AccessControl"
+                ],
+                "isLet": true,
+                "hasStorage": true,
+                "accessors": [
+                  {
+                    "kind": "Accessor",
+                    "name": "Get",
+                    "printedName": "Get()",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ],
+                    "declKind": "Accessor",
+                    "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV7messageSSvg",
+                    "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV7messageSSvg",
+                    "moduleName": "NNWebSocket",
+                    "implicit": true,
+                    "accessorKind": "get"
+                  }
+                ]
+              },
+              {
+                "kind": "Constructor",
+                "name": "init",
+                "printedName": "init(code:message:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketError",
+                    "printedName": "NNWebSocket.WebSocketState.WebSocketError",
+                    "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Optional",
+                    "printedName": "Swift.Int?",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Int",
+                        "printedName": "Swift.Int",
+                        "usr": "s:Si"
+                      }
+                    ],
+                    "hasDefaultArg": true,
+                    "usr": "s:Sq"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "declKind": "Constructor",
+                "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV4code7messageAESiSg_SStcfc",
+                "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV4code7messageAESiSg_SStcfc",
+                "moduleName": "NNWebSocket",
+                "declAttributes": [
+                  "AccessControl"
+                ],
+                "init_kind": "Designated"
+              },
+              {
+                "kind": "Function",
+                "name": "==",
+                "printedName": "==(_:_:)",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Bool",
+                    "printedName": "Swift.Bool",
+                    "usr": "s:Sb"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketError",
+                    "printedName": "NNWebSocket.WebSocketState.WebSocketError",
+                    "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "WebSocketError",
+                    "printedName": "NNWebSocket.WebSocketState.WebSocketError",
+                    "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV"
+                  }
+                ],
+                "declKind": "Func",
+                "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV2eeoiySbAE_AEtFZ",
+                "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV2eeoiySbAE_AEtFZ",
+                "moduleName": "NNWebSocket",
+                "static": true,
+                "implicit": true,
+                "funcSelfKind": "NonMutating"
+              }
+            ],
+            "declKind": "Struct",
+            "usr": "s:11NNWebSocket03WebB5StateO0cB5ErrorV",
+            "mangledName": "$s11NNWebSocket03WebB5StateO0cB5ErrorV",
+            "moduleName": "NNWebSocket",
+            "declAttributes": [
+              "AccessControl"
+            ],
+            "conformances": [
+              {
+                "kind": "Conformance",
+                "name": "Copyable",
+                "printedName": "Copyable",
+                "usr": "s:s8CopyableP",
+                "mangledName": "$ss8CopyableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Escapable",
+                "printedName": "Escapable",
+                "usr": "s:s9EscapableP",
+                "mangledName": "$ss9EscapableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Equatable",
+                "printedName": "Equatable",
+                "usr": "s:SQ",
+                "mangledName": "$sSQ"
+              },
+              {
+                "kind": "Conformance",
+                "name": "Sendable",
+                "printedName": "Sendable",
+                "usr": "s:s8SendableP",
+                "mangledName": "$ss8SendableP"
+              },
+              {
+                "kind": "Conformance",
+                "name": "SendableMetatype",
+                "printedName": "SendableMetatype",
+                "usr": "s:s16SendableMetatypeP",
+                "mangledName": "$ss16SendableMetatypeP"
+              }
+            ]
+          },
+          {
+            "kind": "Function",
+            "name": "==",
+            "printedName": "==(_:_:)",
+            "children": [
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketState",
+                "printedName": "NNWebSocket.WebSocketState",
+                "usr": "s:11NNWebSocket03WebB5StateO"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "WebSocketState",
+                "printedName": "NNWebSocket.WebSocketState",
+                "usr": "s:11NNWebSocket03WebB5StateO"
+              }
+            ],
+            "declKind": "Func",
+            "usr": "s:11NNWebSocket03WebB5StateO2eeoiySbAC_ACtFZ",
+            "mangledName": "$s11NNWebSocket03WebB5StateO2eeoiySbAC_ACtFZ",
+            "moduleName": "NNWebSocket",
+            "static": true,
+            "implicit": true,
+            "funcSelfKind": "NonMutating"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11NNWebSocket03WebB5StateO",
+        "mangledName": "$s11NNWebSocket03WebB5StateO",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Equatable",
+            "printedName": "Equatable",
+            "usr": "s:SQ",
+            "mangledName": "$sSQ"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Sendable",
+            "printedName": "Sendable",
+            "usr": "s:s8SendableP",
+            "mangledName": "$ss8SendableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "SendableMetatype",
+            "printedName": "SendableMetatype",
+            "usr": "s:s16SendableMetatypeP",
+            "mangledName": "$ss16SendableMetatypeP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketSend",
+        "printedName": "WebSocketSend",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketSend.Type) -> (Swift.String) -> NNWebSocket.WebSocketSend",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NNWebSocket.WebSocketSend",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketSend",
+                        "printedName": "NNWebSocket.WebSocketSend",
+                        "usr": "s:11NNWebSocket03WebB4SendO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketSend.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketSend",
+                        "printedName": "NNWebSocket.WebSocketSend",
+                        "usr": "s:11NNWebSocket03WebB4SendO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB4SendO4textyACSScACmF",
+            "mangledName": "$s11NNWebSocket03WebB4SendO4textyACSScACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketSend.Type) -> (Foundation.Data) -> NNWebSocket.WebSocketSend",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data) -> NNWebSocket.WebSocketSend",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketSend",
+                        "printedName": "NNWebSocket.WebSocketSend",
+                        "usr": "s:11NNWebSocket03WebB4SendO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketSend.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketSend",
+                        "printedName": "NNWebSocket.WebSocketSend",
+                        "usr": "s:11NNWebSocket03WebB4SendO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB4SendO4datayAC10Foundation4DataVcACmF",
+            "mangledName": "$s11NNWebSocket03WebB4SendO4datayAC10Foundation4DataVcACmF",
+            "moduleName": "NNWebSocket"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11NNWebSocket03WebB4SendO",
+        "mangledName": "$s11NNWebSocket03WebB4SendO",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "WebSocketReceive",
+        "printedName": "WebSocketReceive",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "text",
+            "printedName": "text",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketReceive.Type) -> (Swift.String) -> NNWebSocket.WebSocketReceive",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.String) -> NNWebSocket.WebSocketReceive",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "String",
+                        "printedName": "Swift.String",
+                        "usr": "s:SS"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketReceive.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB7ReceiveO4textyACSScACmF",
+            "mangledName": "$s11NNWebSocket03WebB7ReceiveO4textyACSScACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "data",
+            "printedName": "data",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketReceive.Type) -> (Foundation.Data) -> NNWebSocket.WebSocketReceive",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Foundation.Data) -> NNWebSocket.WebSocketReceive",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Data",
+                        "printedName": "Foundation.Data",
+                        "usr": "s:10Foundation4DataV"
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketReceive.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB7ReceiveO4datayAC10Foundation4DataVcACmF",
+            "mangledName": "$s11NNWebSocket03WebB7ReceiveO4datayAC10Foundation4DataVcACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "closed",
+            "printedName": "closed",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.WebSocketReceive.Type) -> (Swift.Int?, Swift.String?) -> NNWebSocket.WebSocketReceive",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int?, Swift.String?) -> NNWebSocket.WebSocketReceive",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(code: Swift.Int?, reason: Swift.String?)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.Int?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "Int",
+                                "printedName": "Swift.Int",
+                                "usr": "s:Si"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Optional",
+                            "printedName": "Swift.String?",
+                            "children": [
+                              {
+                                "kind": "TypeNominal",
+                                "name": "String",
+                                "printedName": "Swift.String",
+                                "usr": "s:SS"
+                              }
+                            ],
+                            "usr": "s:Sq"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.WebSocketReceive.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "WebSocketReceive",
+                        "printedName": "NNWebSocket.WebSocketReceive",
+                        "usr": "s:11NNWebSocket03WebB7ReceiveO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket03WebB7ReceiveO6closedyACSiSg_SSSgtcACmF",
+            "mangledName": "$s11NNWebSocket03WebB7ReceiveO6closedyACSiSg_SSSgtcACmF",
+            "moduleName": "NNWebSocket"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11NNWebSocket03WebB7ReceiveO",
+        "mangledName": "$s11NNWebSocket03WebB7ReceiveO",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "TypeDecl",
+        "name": "ReconnectPolicy",
+        "printedName": "ReconnectPolicy",
+        "children": [
+          {
+            "kind": "Var",
+            "name": "never",
+            "printedName": "never",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.ReconnectPolicy.Type) -> NNWebSocket.ReconnectPolicy",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "ReconnectPolicy",
+                    "printedName": "NNWebSocket.ReconnectPolicy",
+                    "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.ReconnectPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectPolicy",
+                        "printedName": "NNWebSocket.ReconnectPolicy",
+                        "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket15ReconnectPolicyO5neveryA2CmF",
+            "mangledName": "$s11NNWebSocket15ReconnectPolicyO5neveryA2CmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "immediate",
+            "printedName": "immediate",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.ReconnectPolicy.Type) -> (Swift.Int) -> NNWebSocket.ReconnectPolicy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int) -> NNWebSocket.ReconnectPolicy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectPolicy",
+                        "printedName": "NNWebSocket.ReconnectPolicy",
+                        "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxAttempts: Swift.Int)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.ReconnectPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectPolicy",
+                        "printedName": "NNWebSocket.ReconnectPolicy",
+                        "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket15ReconnectPolicyO9immediateyACSi_tcACmF",
+            "mangledName": "$s11NNWebSocket15ReconnectPolicyO9immediateyACSi_tcACmF",
+            "moduleName": "NNWebSocket"
+          },
+          {
+            "kind": "Var",
+            "name": "exponentialBackoff",
+            "printedName": "exponentialBackoff",
+            "children": [
+              {
+                "kind": "TypeFunc",
+                "name": "Function",
+                "printedName": "(NNWebSocket.ReconnectPolicy.Type) -> (Swift.Int, Swift.Double) -> NNWebSocket.ReconnectPolicy",
+                "children": [
+                  {
+                    "kind": "TypeFunc",
+                    "name": "Function",
+                    "printedName": "(Swift.Int, Swift.Double) -> NNWebSocket.ReconnectPolicy",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectPolicy",
+                        "printedName": "NNWebSocket.ReconnectPolicy",
+                        "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                      },
+                      {
+                        "kind": "TypeNominal",
+                        "name": "Tuple",
+                        "printedName": "(maxAttempts: Swift.Int, baseDelay: Swift.Double)",
+                        "children": [
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Int",
+                            "printedName": "Swift.Int",
+                            "usr": "s:Si"
+                          },
+                          {
+                            "kind": "TypeNominal",
+                            "name": "Double",
+                            "printedName": "Swift.Double",
+                            "usr": "s:Sd"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "kind": "TypeNominal",
+                    "name": "Metatype",
+                    "printedName": "NNWebSocket.ReconnectPolicy.Type",
+                    "children": [
+                      {
+                        "kind": "TypeNominal",
+                        "name": "ReconnectPolicy",
+                        "printedName": "NNWebSocket.ReconnectPolicy",
+                        "usr": "s:11NNWebSocket15ReconnectPolicyO"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "declKind": "EnumElement",
+            "usr": "s:11NNWebSocket15ReconnectPolicyO18exponentialBackoffyACSi_SdtcACmF",
+            "mangledName": "$s11NNWebSocket15ReconnectPolicyO18exponentialBackoffyACSi_SdtcACmF",
+            "moduleName": "NNWebSocket"
+          }
+        ],
+        "declKind": "Enum",
+        "usr": "s:11NNWebSocket15ReconnectPolicyO",
+        "mangledName": "$s11NNWebSocket15ReconnectPolicyO",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "AccessControl",
+          "RawDocComment"
+        ],
+        "conformances": [
+          {
+            "kind": "Conformance",
+            "name": "Copyable",
+            "printedName": "Copyable",
+            "usr": "s:s8CopyableP",
+            "mangledName": "$ss8CopyableP"
+          },
+          {
+            "kind": "Conformance",
+            "name": "Escapable",
+            "printedName": "Escapable",
+            "usr": "s:s9EscapableP",
+            "mangledName": "$ss9EscapableP"
+          }
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Foundation",
+        "printedName": "Foundation",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket",
+        "declAttributes": [
+          "RawDocComment"
+        ]
+      },
+      {
+        "kind": "Import",
+        "name": "Combine",
+        "printedName": "Combine",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket"
+      },
+      {
+        "kind": "Import",
+        "name": "Starscream",
+        "printedName": "Starscream",
+        "declKind": "Import",
+        "moduleName": "NNWebSocket"
+      }
+    ],
+    "json_format_version": 8
+  },
+  "ConstValues": [
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "StringLiteral",
+      "offset": 553,
+      "length": 20,
+      "value": "\"nnwebsocket.client\""
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 824,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "BooleanLiteral",
+      "offset": 860,
+      "length": 4,
+      "value": "true"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1584,
+      "length": 2,
+      "value": "15"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 1612,
+      "length": 1,
+      "value": "3"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2023,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketClient.swift",
+      "kind": "IntegerLiteral",
+      "offset": 2037,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/PingService.swift",
+      "kind": "IntegerLiteral",
+      "offset": 341,
+      "length": 1,
+      "value": "0"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 320,
+      "length": 1,
+      "value": "5"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocket.swift",
+      "kind": "IntegerLiteral",
+      "offset": 334,
+      "length": 1,
+      "value": "1"
+    },
+    {
+      "filePath": "\/Users\/admin\/Data\/Works\/Nana\/NNWebsocket-IOS\/Sources\/NNWebSocket\/NNWebSocketManager.swift",
+      "kind": "BooleanLiteral",
+      "offset": 624,
+      "length": 5,
+      "value": "false"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 6.2.3 effective-5.10 (swiftlang-6.2.3.3.21 clang-1700.6.3.2)
+// swift-module-flags: -target arm64-apple-ios15.6 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -enable-upcoming-feature DisableOutwardActorInference -enable-upcoming-feature InferSendableFromCaptures -enable-upcoming-feature GlobalActorIsolatedTypesUsability -enable-upcoming-feature MemberImportVisibility -enable-upcoming-feature InferIsolatedConformances -enable-upcoming-feature NonisolatedNonsendingByDefault -enable-experimental-feature DebugDescriptionMacro -enable-bare-slash-regex -module-name NNWebSocket
+// swift-module-flags-ignorable:  -formal-cxx-interoperability-mode=off -interface-compiler-version 6.2.3
+import Combine
+import Foundation
+import Starscream
+import Swift
+import _Concurrency
+import _StringProcessing
+import _SwiftConcurrencyShims
+public protocol NNWebSocketClient {
+  func connect()
+  func disconnect()
+  func send(_ message: NNWebSocket.WebSocketSend)
+  var statePublisher: Combine.AnyPublisher<NNWebSocket.WebSocketState, Swift.Never> { get }
+  var incomingPublisher: Combine.AnyPublisher<NNWebSocket.WebSocketReceive, Swift.Never> { get }
+}
+public enum NNWebSocketConnection {
+  #if compiler(>=5.3) && $NonescapableTypes
+  public static func makeConnection(url: Foundation.URL, tokenProvider: @escaping () -> Swift.String?, reconnectPolicy: NNWebSocket.ReconnectPolicy = .exponentialBackoff(maxAttempts: 5, baseDelay: 1)) -> any NNWebSocket.NNWebSocketClient
+  #endif
+}
+public enum WebSocketState : Swift.Equatable, Swift.Sendable {
+  case connected
+  case connecting
+  case disconnected
+  case reconnecting
+  case peerClosed
+  case reconnectSuggested(Swift.Bool)
+  case failed(error: NNWebSocket.WebSocketState.WebSocketError)
+  public struct WebSocketError : Swift.Equatable, Swift.Sendable {
+    public let code: Swift.Int?
+    public let message: Swift.String
+    #if compiler(>=5.3) && $NonescapableTypes
+    public init(code: Swift.Int? = nil, message: Swift.String)
+    #endif
+    public static func == (a: NNWebSocket.WebSocketState.WebSocketError, b: NNWebSocket.WebSocketState.WebSocketError) -> Swift.Bool
+  }
+  public static func == (a: NNWebSocket.WebSocketState, b: NNWebSocket.WebSocketState) -> Swift.Bool
+}
+public enum WebSocketSend {
+  case text(Swift.String)
+  case data(Foundation.Data)
+}
+public enum WebSocketReceive {
+  case text(Swift.String)
+  case data(Foundation.Data)
+  case closed(code: Swift.Int?, reason: Swift.String?)
+}
+public enum ReconnectPolicy {
+  case never
+  case immediate(maxAttempts: Swift.Int)
+  case exponentialBackoff(maxAttempts: Swift.Int, baseDelay: Foundation.TimeInterval)
+}
